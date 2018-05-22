@@ -12,7 +12,7 @@ app.locals.entries= entries;
 
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
-
+var daniel=true;
 app.get('/',(request,response)=> response.render('index'));
 app.get('/new-entry',(request,response)=>response.render("new-entry"));
 
